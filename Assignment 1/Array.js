@@ -145,5 +145,5 @@ Array.prototype.myForEach = function(callback) {
     }
 }
 
-array1 = [1, 2, 3, 4, 5];
-array1.myForEach((x) => console.log(x));
+// array1 = [1, 2, 3, 4, 5];
+// array1.myForEach((x) => console.log(x));
