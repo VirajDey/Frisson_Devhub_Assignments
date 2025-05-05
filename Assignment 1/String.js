@@ -124,5 +124,5 @@ String.prototype.mySplit = function (separator, limit) {
     return result;
 } 
  
-str1 = "Hello world! How are you?";
-console.log(str1.mySplit(" ",2));
+// str1 = "Hello world! How are you?";
+// console.log(str1.mySplit(" ",2));
