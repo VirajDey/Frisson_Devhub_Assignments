@@ -119,6 +119,9 @@ Array.prototype.myMap = function(callback) {
     return newArray;
 } 
 
+// array1 = [1, 2, 3, 4, 5];
+// console.log(array1.myMap((x) => x**2));
+
 
 
 //-------------------filter function in Array  
@@ -131,3 +134,16 @@ Array.prototype.myFilter = function(callback) {
     }
     return newArray;
 }
+
+// array1 = [1, 2, 3, 4, 5];
+// console.log(array1.myFilter((x) => x > 2));
+
+//-------------------forEach function in Array
+Array.prototype.myForEach = function(callback) {
+    for (i = 0; i < this.length; i++) {
+        callback(this[i], i, this);
+    }
+}
+
+array1 = [1, 2, 3, 4, 5];
+array1.myForEach((x) => console.log(x));

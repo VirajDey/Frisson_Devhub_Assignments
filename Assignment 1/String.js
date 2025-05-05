@@ -1,5 +1,5 @@
 //-------------------index function in string
-String.prototype.index = function (str) {
+String.prototype.myIndex = function (str) {
     let str1 = this;
     let str2 = str;
     let count = 0;
@@ -15,6 +15,9 @@ String.prototype.index = function (str) {
     }
     return -1;
 }
+// str1 = "Hello world!";
+// str2 = "world";
+// console.log(str1.myIndex(str2));
 
 
 //-------------------at function in string
@@ -25,3 +28,4 @@ String.prototype.at = function (index) {
     }
     return str[index];
 }
+
