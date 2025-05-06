@@ -71,6 +71,7 @@ body {
     margin-top: 2vh;
     margin-right: 1%;
     border-radius: 1rem;
+    flex-direction: column;
 }
 
 .small {
@@ -134,7 +135,7 @@ body {
 
 .below {
     position: absolute;
-    bottom: 2%;
+    bottom: 1%;
     display: flex;
     margin-left: 1rem;
     justify-content: space-between;
@@ -144,4 +145,118 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: white;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 37rem;
+    bottom: 1%;
+}
+
+.reactions {
+    width: 14vw;
+    background-color: #494848;
+    border-radius: 1rem;
+    padding: 1%;
+    padding-right: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 19%;
+
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5%;
+}
+
+.button {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #494848;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.flex {
+    display: flex;
+}
+
+#peopleSearchContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.searchbar {
+    border-radius: 2px;
+    padding: 2px;
+    width: 98%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+}
+
+.sidetop {
+    justify-content: space-between;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 6px;
+    padding-right: 5px;
+    padding-bottom: 0;
+}
+.sidetop h4{
+    color: black;
+}
+
+#containerUsername {
+    color: white;
+    position: absolute;
+    bottom: 15vh;
+    left: 9vw;
+    font-size: small;
+}
+
+#participantsList {
+    height: 62vh;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    margin-left: 1%;
+    width: 98%;
+}
+
+.contributer {
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 0 0.5rem;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin-bottom: 1%;
+}
+.text{
+    color: black;
+    margin-top: 1%;
+}
+
+.meeting{
+    margin-top: 12%;
+    font-size: small;
+    padding-left: 2%;
+    font-weight: bold;
+    color: rgb(112, 103, 103);
+}
+#number{
+    color: black;
+    padding-top: 0.2rem;
 }
