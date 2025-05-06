@@ -1,75 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Meet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="grp1">
-            <div class="symbol"><img src="door-open-solid (1).svg" height="20px" width="20px" alt=""></div>
-            <div class="main">
-                <div class="right">
-                    <div class="small">
-                        <img src="microphone-solid.svg" height="18px" width="18px" alt="">
+    <button class="toggle-sidebar">
+        <i class="fa-solid fa-users"></i>
+    </button>
+    <div class="sidebar-overlay"></div>
+
+    <div class="app">
+        <div class="top_section">
+            <div class="vertical_division">
+                <span class="top_icon"><i class="fa-solid fa-door-open"></i></span>
+                <div class="main-center">
+                    <div class="mike">
+                        <div><i class="fa-solid fa-microphone-slash"></i></div>
                     </div>
-                    <div class="rectangle">
-                        <img class='circle-inside' src="WhatsApp Image 2025-05-05 at 23.21.53_511a879b.jpg" alt="">
-                        <div class="name-inside">Viraj Dey</div>
+                    <div class="user-avatar">
+                        <img src="WhatsApp Image 2025-05-05 at 23.21.53_511a879b.jpg" alt="User" />
+                    </div>
+                    <div class="user-detail">
+                        <div class="user-name">Viraj Dey</div>
+                        <div class="round-box">
+                            <img src="WhatsApp Image 2025-05-05 at 23.21.53_511a879b.jpg" alt="User" />
+                            <p>Viraj Dey</p>
+                        </div>
                     </div>
                 </div>
-                <img class='circle' src="WhatsApp Image 2025-05-05 at 23.21.53_511a879b.jpg" alt="">
-                <div class="name">Viraj Dey</div>
+            </div>
+
+            <div class="people-panel">
+                <div class="people-panel-top">
+                    <p>People</p>
+                    <span class="close-sidebar"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for people" />
+                </div>
+                <div class="participants-title">IN THE MEETING</div>
+                <div class="participant-list">
+                    <div class="participant-list-top">
+                        <p>Contributors</p>
+                        <div class="participant_list_right">
+                            <p>9</p>
+                            <span class="toggle-participants"><i class="fa-solid fa-angle-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="participant-items">
+                        <div class="participant-item">
+                            <div class="participant-info">
+                                <img src="WhatsApp Image 2025-05-05 at 23.21.53_511a879b.jpg" alt="Participant" class="participant-avatar">
+                                <span class="participant-name">Viraj Dey</span>
+                            </div>
+                            <div class="participant-controls">
+                                <i class="fa-solid fa-microphone-slash"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="sidebar">
-            <div id="peopleSearchContainer">
-                <div class="flex sidetop">
-                    <h4>People</h4>
-                    <img src="close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="15px" height="15px" alt="">
-                </div>
-                <div class="searchbar ">
-                    <img src="search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="15" height="15" alt="">
-                    <h5 style="color: black; padding-left: 2%;">Search for people</h5>
-                </div>
-            </div>
-            <div>
-                <p class="meeting" style="padding-bottom: 2px; color: rgb(73, 73, 73);">In the meeting</p>
-                <div class="contributer ">
-                    <h4 class="text">contributers</h4>
-                    <div class="flex">
-                        <p id="number">9</p>
-                        <img src="keyboard_arrow_up_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div id="participantsList">
 
+        <div class="bottom_section">
+            <div class="reactions">
+                ❤️ 🎉 👍 👏 😂 😮 😢 👎
+            </div>
+            <div class="controls-data">
+                <div class="meeting-id">12:49 | fzo-xhja-zem</div>
+                <div class="controls">
+                    <button><i class="fa-solid fa-microphone"></i></button>
+                    <button><i class="fa-solid fa-video-slash"></i></button>
+                    <button><i class="fa-regular fa-closed-captioning"></i></button>
+                    <button><i class="fa-sharp fa-regular fa-face-smile"></i></button>
+                    <button><i class="fa-solid fa-laptop"></i></button>
+                    <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <button class="end-call"><i class="fa-solid fa-phone"></i></button>
+                </div>
+                <div class="controls">
+                    <button><i class="fa-solid fa-circle-info"></i></button>
+                    <button><i class="fa-solid fa-users"></i></button>
+                    <button><i class="fa-solid fa-message"></i></button>
+                    <button><i class="fa-regular fa-circle-dot"></i></button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="below">
-        <div class="detail">12:49 | fzo-xhja-zem</div>
-        <div class="control">
-            <div class="reactions"> ❤️ 🎉 👍 👏 😂 😮 😢 👎</div>
-            <div class="controls">
-                <button class="button"></button>
-                <button class="button"></button>
-                <button class="button"></button>
-                <button class="button"></button>
-                <button class="button"></button>
-                <button class="button"></button>
-                <button class="button"></button>
-                <button class="button"></button>
-            </div>
-        </div>
-        <div class="manage"></div>
-    </div>
 
+    <script>
+        const toggleBtn = document.querySelector(".toggle-sidebar");
+        const sidebar = document.querySelector(".people-panel");
+        const closeBtn = document.querySelector(".close-sidebar");
+        const overlay = document.querySelector(".sidebar-overlay");
+        const toggleParticipantsBtn = document.querySelector(".toggle-participants");
+        const participantItems = document.querySelector(".participant-items");
+        const toggleIcon = toggleParticipantsBtn.querySelector("i");
+
+        toggleBtn.addEventListener("click", () => {
+            sidebar.classList.add("show");
+            overlay.classList.add("show");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.remove("show");
+            overlay.classList.remove("show");
+        });
+
+        overlay.addEventListener("click", () => {
+            sidebar.classList.remove("show");
+            overlay.classList.remove("show");
+        });
+
+        toggleParticipantsBtn.addEventListener("click", () => {
+            participantItems.classList.toggle("hidden");
+            if (toggleIcon.classList.contains("fa-angle-up")) {
+                toggleIcon.classList.remove("fa-angle-up");
+                toggleIcon.classList.add("fa-angle-down");
+            } else {
+                toggleIcon.classList.remove("fa-angle-down");
+                toggleIcon.classList.add("fa-angle-up");
+            }
+        });
+    </script>
 </body>
-
 </html>
