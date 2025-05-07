@@ -25,21 +25,27 @@
 }
 .header{
     grid-area: header;
+    background-color: yellow;
 }
 .navigation{
     grid-area: navigation;
+    background-color: lightcoral;
 }
 .sidebar{
     grid-area: sidebar;
+    background-color: lightblue;
 }
 .main{
     grid-area: main;
+    background-color: lime;
 }
 .ads{
     grid-area: ads;
+    background-color: mediumturquoise;
 }
 .footer{
     grid-area: footer;
+    background-color: orange;
 }
 
 
