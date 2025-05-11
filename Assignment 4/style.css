@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -23,6 +25,9 @@ body {
   padding: 8px;
   text-align: center;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
@@ -127,4 +132,19 @@ button {
   height: 60vh;
   background-color: grey;
   padding-left: 10%;
+}
+
+.logo{
+  display: flex;
+  flex-wrap: wrap;
+  width: 4rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+
+.logo > p{
+  text-align: center;
+  font-size: small;
 }
