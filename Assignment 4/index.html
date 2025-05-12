@@ -4,14 +4,27 @@
     <meta charset="UTF-8" />
     <title>Main Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <div class="header">
-      <div class="logo"><p>History Class</p></div>
+      <div style="padding-left: 4%">
+        <div class="logo"><p>History Class</p></div>
+      </div>
       <div class="search-bar">
-        <input type="text" placeholder="Search..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          placeholder="Search: City, Place, Architecture, Park, Collections...."
+        />
+        <i class="fa-solid fa-camera"></i>
       </div>
       <div class="nav-links">
         <a href="#">About</a>
@@ -24,12 +37,11 @@
 
     <div class="status-bar">
       <p>STATUS: NOT LIVE</p>
-     <div class="bar-buttons">
-       <button>SUBMIT</button>
-       <button><i class="fa-solid fa-floppy-disk"></i></button>
-       <button><i class="fa-solid fa-x"></i></button>
+      <div class="bar-buttons">
+        <button>SUBMIT</button>
+        <button><i class="fa-solid fa-floppy-disk"></i></button>
+        <button><i class="fa-solid fa-x"></i></button>
       </div>
-
     </div>
 
     <div class="cover">
@@ -37,38 +49,95 @@
     </div>
     <div class="container">
       <div class="left">
-        <div class="form-group">
-          <label>Name*</label>
-          <input type="text" />
+        <div class="form-group" id="lal">
+          <div class="question">
+            <label>Name *</label>
+            <i class="fa-regular fa-circle-question"></i>
+          </div>
+          <textarea rows="2" placeholder="Name"></textarea>
+          <!-- <input type="text" /> -->
         </div>
 
-        <div class="form-group">
-          <label>Profession*</label>
+        <div class="form-group" id="lal">
+          <div class="question">
+            <label>Profession *</label>
+            <i class="fa-regular fa-circle-question"></i>
+          </div>
+
           <select>
             <option value="">Select Profession</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label>Affiliations</label><br />
-          <input type="radio" name="affiliation" checked /> Person
-          <input type="radio" name="affiliation" /> Organization
-          <input type="radio" name="affiliation" /> Publication<br />
-          <button>Add More</button>
+          <div class="question" style="align-items: center">
+            <label>Affiliations</label>
+            <button type="button" id="add-more-btn">Add More</button>
+          </div>
+          <br />
+          <div>
+            <input
+              type="radio"
+              name="affiliation"
+              class="radio"
+              value="Person"
+            />
+            Person
+            <input
+              type="radio"
+              name="affiliation"
+              class="radio"
+              value="Organization"
+            />
+            Organization
+            <input
+              type="radio"
+              name="affiliation"
+              class="radio"
+              value="Publication"
+            />
+            Publication<br />
+          </div>
+          <div id="dynamic-fields-container"></div>
         </div>
 
-        <div class="form-group">
-          <label>About*</label>
+        <div class="form-group" id="lal">
+          <div class="question">
+            <label>About *</label>
+            <i class="fa-regular fa-circle-question"></i>
+          </div>
           <textarea rows="5"></textarea>
         </div>
 
-        <div class="form-group">
-          <label>Date</label>
+        <div
+          class="form-group"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <label style="width: 30%"
+            >Date <i class="fa-regular fa-circle-question"></i
+          ></label>
           <button>Add More</button>
         </div>
 
-        <div class="form-group">
-          <label>Podcasts</label>
+        <div
+          class="form-group"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <label style="width: 40%"
+            >Podcasts
+            <i
+              class="fa-regular fa-circle-question"
+              style="padding-left: 1%"
+            ></i
+          ></label>
           <button>Add More</button>
         </div>
       </div>
@@ -90,5 +159,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
