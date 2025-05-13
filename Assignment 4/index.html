@@ -14,25 +14,29 @@
   </head>
 
   <body>
-    <div class="header">
-      <div style="padding-left: 4%">
-        <div class="logo"><p>History Class</p></div>
-      </div>
-      <div class="search-bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input
-          type="text"
-          placeholder="Search: City, Place, Architecture, Park, Collections...."
-        />
-        <i class="fa-solid fa-camera"></i>
-      </div>
-      <div class="nav-links">
-        <a href="#">About</a>
-        <a href="#">Collections</a>
-        <a href="#">Calendar</a>
-        <a href="#">Explore</a>
-        <span>Welcome kapil</span>
-      </div>
+    <div class="navContainer">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">History Class</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search: City, Place, Art, Architecture, Park, Collection...">
+          <button><img src="./assets/camera.svg" alt="Search Icon"></button>
+        </div>
+
+        <span class="menu-toggle" onclick="toggleMenu()">
+          <img id="menu-icon" src="./assets/menu.svg" alt="Menu" />
+          <img id="close-icon" src="./assets/close.svg" alt="Close" style="display: none;" />
+        </span>
+
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Explore</a></li>
+          <li>Welcome Kapil</li>
+        </ul>
+      </nav>
     </div>
 
     <div class="status-bar">
@@ -106,7 +110,7 @@
             <label>About *</label>
             <i class="fa-regular fa-circle-question"></i>
           </div>
-          <textarea rows="5"></textarea>
+          <textarea rows="5" placeholder="Tell the world about the project The scale/size, materials. context, design concept, impact, etc"></textarea>
         </div>
 
         <div
