@@ -28,6 +28,10 @@ body {
     padding-left: 10vw;
     padding-right: 2rem;
 }
+
+.bar-buttons button{
+    background-color: white;
+}
   
 .container {
     display: flex;
@@ -42,7 +46,6 @@ body {
   
 .left {
     min-width: 300px;
-    background-color: #f9f9f9;
     width: 31%;
 }
   
@@ -51,22 +54,22 @@ body {
     background-color: white;
 }
   
-.image-upload,
 .form-group,
 .photo-upload,
 .drawing-upload {
     border: 1px solid #ccc;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #fff;
+    background-color: white;
 }
   
-.image-upload {
+.image-upload {  
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30%;
+    background-color: white;
 }
   
 input[type="text"],
@@ -86,6 +89,7 @@ button {
     margin-right: 10px;
     border: none;
     cursor: pointer;
+    background-color: #b8b8b8b6;
 }
   
 .submit-btn {
@@ -222,7 +226,7 @@ button {
 }
 
 .logo a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
@@ -286,6 +290,12 @@ button {
     text-decoration: underline;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width: 1024px) {
     .navbar {
         flex-wrap: wrap;
@@ -319,13 +329,17 @@ button {
         width: 100%;
         order: 3;
     }
+     .left, .right {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .cover{
+        height: 25vh;
+        width: 100%;
+    }
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 @media screen and (max-width: 768px) {
     .header {
