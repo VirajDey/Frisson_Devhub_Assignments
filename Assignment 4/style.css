@@ -55,7 +55,7 @@ body {
 }
 
 .square {
-  width: 40vh;
+  width: 35vh;
   border: 1px solid #ccc;
   margin-bottom: 20px;
   background-color: #eee;
@@ -299,45 +299,56 @@ button {
   text-decoration: underline;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.plus{
+.plus {
   height: 0.8rem;
   font-size: xx-large;
 }
 
-.square .up, .down{
+.square .up,
+.down {
   padding-left: 3%;
 }
 
-.up{
+.up {
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 0;
 }
 
-.down{
+.down {
   font-size: small;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
-.divider{
-    background-color: #eee;
-    height: 2rem;
-    margin-bottom: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 2%;
+.divider {
+  background-color: #eee;
+  height: 2rem;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  width: 90%;
+}
+
+.tag {
+  font-weight: bold;
+}
+
+.notes span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.notes textarea {
+  height: 25vh;
+  width: 90%;
+  resize: none;
+  background-color: #eee;
 }
 
 @media screen and (max-width: 1024px) {
   .navbar {
-    flex-wrap: wrap;
     gap: 15px;
   }
 
@@ -366,7 +377,6 @@ button {
 
   .search-bar {
     width: 100%;
-    order: 3;
   }
   .left,
   .right {
@@ -377,6 +387,10 @@ button {
   .cover {
     height: 25vh;
     width: 100%;
+  }
+
+  .container {
+    padding-left: 0;
   }
 }
 
@@ -404,7 +418,7 @@ button {
   }
 
   .image-upload {
-    height: 200px;
+    height: 100%;
   }
   .search-bar {
     width: 40vw;
@@ -412,7 +426,7 @@ button {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header {
     padding: 10px;
   }
@@ -474,10 +488,29 @@ button {
   }
 
   .image-upload {
-    height: 150px;
+    height: 100%;
   }
 
   .upload-placeholder {
     height: 100px;
   }
+
+  .square {
+    height: 22vh;
+  }
+
+  .divider {
+    width: 100%;
+  }
+
+  #photo{
+    width: 8rem;
+  }
+
+  .image-upload p{
+    margin-left: 1.5rem;
+  }
+   .status-bar{
+    font-size: small;
+   }
 }

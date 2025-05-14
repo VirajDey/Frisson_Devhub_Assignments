@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -15,7 +16,7 @@
 
   <body>
     <div class="navContainer">
-      <nav class="navbar" style="padding-left: 5%;">
+      <nav class="navbar">
         <div class="logo">
           <a href="#">History Class</a>
         </div>
@@ -49,7 +50,7 @@
     </div>
 
     <div class="cover">
-      <div class="image-upload">+ Add a Headshot</div>
+      <div class="image-upload"><p>+ Add a Headshot</p></div>
     </div>
     <div class="container">
       <div class="left">
@@ -147,8 +148,12 @@
       </div>
 
       <div class="right">
-        <div class="divider">
-          <p>ADDITIONAL PHOTOGRAPHS</p>
+        <div class="divider" id="lal">
+          <div style="display: flex; align-items: center;">
+            <p class="tag" id="photo">ADDITIONAL PHOTOGRAPHS</p>
+            <i style="padding-left: 0.5rem;" class="fa-regular fa-circle-question"></i>
+          </div>
+          <label style="padding-right: 1%;">0 Images, Show less <i style="padding-left: 0.3rem;" class="fa-solid fa-angle-up"></i></label>
         </div>
         <div class="square">
           <div class="upload-placeholder" id="lal">
@@ -158,7 +163,13 @@
           <p class="up">Image Date - Image Caption</p>
           <p class="down">Image Description</p>
         </div>
-
+         <div class="divider" id="lal">
+          <div style="display: flex; align-items: center;">
+            <p class="tag">DRAWINGS *</p>
+            <i style="padding-left: 0.5rem;" class="fa-regular fa-circle-question"></i>
+          </div>
+          <label style="padding-right: 1%;">0 Drawings, Show less <i style="padding-left: 0.3rem;" class="fa-solid fa-angle-up"></i></label>
+        </div>
         <div class="square" >
           <div class="upload-placeholder" id="lal">
             <p class="plus">+</p>
@@ -168,10 +179,22 @@
           <p class="down">Drawing Description</p>
         </div>
 
-        <div class="button-group">
+         <div class="divider">
+          <div style="display: flex; align-items: center;">
+            <p class="tag" style="color: #b01c1c;">NOTES</p>
+            <i style="padding-left: 0.5rem;" class="fa-regular fa-circle-question"></i>
+          </div>
+        </div>
+
+        <div class="notes">
+          <span>Questions OR Comments OR Additional Information about the Person</span>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <!-- <div class="button-group">
           <button class="submit-btn">SUBMIT</button>
           <button class="cancel-btn">CANCEL</button>
-        </div>
+        </div> -->
       </div>
     </div>
     <script src="script.js"></script>
