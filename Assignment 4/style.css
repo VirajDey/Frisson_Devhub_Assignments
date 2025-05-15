@@ -372,36 +372,6 @@ select {
 }
 
 @media screen and (max-width: 1024px) {
-  /* .navbar {
-    gap: 15px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #333;
-    padding: 20px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .navbar {
-    position: relative;
-  }
-
-  .search-bar {
-    width: 100%;
-  } */
   .left,
   .right {
     width: 100%;
@@ -445,6 +415,7 @@ select {
 
   .navbar {
     width: 100%;
+    padding-right: 2%;
   }
 
   .nav-links {
@@ -556,11 +527,12 @@ select {
   }
 
   .upload-placeholder {
-    height: 100px;
+    height: 18vh;
   }
 
   .square {
-    height: 22vh;
+    height: 30vh;
+    width: 100%;
   }
 
   .divider {
@@ -574,5 +546,13 @@ select {
   .image-upload p{
     margin-left: 1.5rem;
   }
+
+  .notes textarea {
+    width: 100%;
+  }
+
+  .status-bar p {
+        margin-left: 1vw;
+    }
   
 }
