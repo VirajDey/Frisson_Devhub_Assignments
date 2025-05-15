@@ -29,17 +29,19 @@ document.getElementById("add-more-btn").addEventListener("click", function () {
 
 
 function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    const menuIcon = document.getElementById('menu-icon');
-    const closeIcon = document.getElementById('close-icon');
-    
-    navLinks.classList.toggle('active');
-    
-    if (navLinks.classList.contains('active')) {
-        menuIcon.style.display = 'none';
-        closeIcon.style.display = 'block';
-    } else {
-        menuIcon.style.display = 'block';
-        closeIcon.style.display = 'none';
-    }
+  const navLinks = document.querySelector(".nav-links");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  navLinks.classList.toggle("active");
+
+  const isOpen = navLinks.classList.contains("active");
+  menuIcon.style.display = isOpen ? "none" : "block";
+  closeIcon.style.display = isOpen ? "block" : "none";
+}
+
+
+function toggleSearch() {
+const searchContainer = document.getElementById('responsiveSearch');
+searchContainer.classList.toggle('active');
 }

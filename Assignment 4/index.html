@@ -15,39 +15,64 @@
   </head>
 
   <body>
-    <div class="navContainer">
-      <nav class="navbar">
-        <div class="logo">
-          <a href="#">History Class</a>
-        </div>
-        <div class="search-bar">
-          <input type="text" placeholder="Search: City, Place, Art, Architecture, Park, Collection...">
-          <button><img src="./assets/camera.svg" alt="Search Icon"></button>
-        </div>
+   <!-- Navbar -->
+  <div class="navContainer">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">History Class</a>
+      </div>
 
-        <span class="menu-toggle" onclick="toggleMenu()">
-          <img id="menu-icon" src="./assets/menu.svg" alt="Menu" />
-          <img id="close-icon" src="./assets/close.svg" alt="Close" style="display: none;" />
-        </span>
+      <!-- Desktop Search Bar -->
+      <div class="search-bar" id="mainSearchBar">
+        <img id="searchIcon" src="./assets/search.svg" alt="">
+        <input type="text" placeholder="Search: City, Place, Art, Architecture, Park, Collection...">
+        <button><img src="./assets/camera.svg" alt="Search Icon"></button>
+      </div>
 
-        <ul class="nav-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Collections</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Explore</a></li>
-          <li>Welcome Kapil</li>
-        </ul>
-      </nav>
+      <!-- Mobile Search Icon -->
+      <img onclick="toggleSearch()" id="searchResponsive" src="./assets/search.svg" alt="Search Icon" />
+
+      <!-- Hamburger Menu -->
+      <span class="menu-toggle" onclick="toggleMenu()">
+        <img id="menu-icon" src="./assets/menu.svg" alt="Menu" />
+        <img id="close-icon" src="./assets/close.svg" alt="Close" style="display: none;" />
+      </span>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Explore</a></li>
+        <li>Welcome Kapil</li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Mobile Responsive Search -->
+  <div class="responsive-search" id="responsiveSearch">
+    <div class="search-bar responsive">
+      <input type="text" placeholder="Search anything...">
+      <button><img src="./assets/camera.svg" alt="Search"></button>
+      <img src="./assets/close.svg" alt="Close" id="closeSearch" onclick="toggleSearch()">
     </div>
+  </div>
 
+  <!-- Status Bar -->
+  <div class="statusContainer">
     <div class="status-bar">
-      <p>STATUS: NOT LIVE</p>
-      <div class="bar-buttons">
+      <p>STATUS <span>: NOT LIVE</span></p>
+      <div class="status-bar-buttons">
         <button>SUBMIT</button>
-        <button><i class="fa-solid fa-floppy-disk"></i></button>
-        <button><i class="fa-solid fa-x"></i></button>
+        <button class="save"><img src="./assets/save.svg" alt="save"></button>
+        <button class="close"><img src="./assets/blackClose.svg" alt="close"></button>
+      </div>
+      <div class="status-bar-resolution">
+        <button><img src="./assets/laptop.svg" alt="icon"></button>
+        <button><img src="./assets/phone.svg" alt="icon"></button>
       </div>
     </div>
+  </div>
 
     <div class="cover">
       <div class="image-upload"><p>+ Add a Headshot</p></div>
