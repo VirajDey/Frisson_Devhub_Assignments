@@ -203,7 +203,7 @@ body {
 
 #searchResponsive {
   display: none;
- }
+}
 
 .container {
   display: flex;
@@ -259,7 +259,6 @@ select {
   padding: 8px;
   margin-top: 5px;
 }
-
 
 .upload-placeholder {
   height: 150px;
@@ -388,11 +387,10 @@ select {
   }
   button {
     margin: 5px;
-}
+  }
 }
 
 @media screen and (max-width: 768px) {
-
   .container {
     flex-direction: column;
   }
@@ -493,7 +491,7 @@ select {
     color: white;
     font-size: 14px;
   }
-  .status-bar p{
+  .status-bar p {
     margin-left: 1vw;
   }
   .search-bar.responsive button {
@@ -502,11 +500,11 @@ select {
     cursor: pointer;
   }
 
- .search-bar.responsive img#closeSearch {
+  .search-bar.responsive img#closeSearch {
     cursor: pointer;
     width: 20px;
     height: 20px;
-}
+  }
 
   .form-group,
   .photo-upload,
@@ -539,11 +537,11 @@ select {
     width: 100%;
   }
 
-  #photo{
+  #photo {
     width: 8rem;
   }
 
-  .image-upload p{
+  .image-upload p {
     margin-left: 1.5rem;
   }
 
@@ -552,7 +550,6 @@ select {
   }
 
   .status-bar p {
-        margin-left: 1vw;
-    }
-  
+    margin-left: 1vw;
+  }
 }

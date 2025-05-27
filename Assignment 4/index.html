@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Main Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -15,64 +15,86 @@
   </head>
 
   <body>
-   <!-- Navbar -->
-  <div class="navContainer">
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#">History Class</a>
-      </div>
+    <!-- Navbar -->
+    <div class="navContainer">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">History Class</a>
+        </div>
 
-      <!-- Desktop Search Bar -->
-      <div class="search-bar" id="mainSearchBar">
-        <img id="searchIcon" src="./assets/search.svg" alt="">
-        <input type="text" placeholder="Search: City, Place, Art, Architecture, Park, Collection...">
-        <button><img src="./assets/camera.svg" alt="Search Icon"></button>
-      </div>
+        <!-- Desktop Search Bar -->
+        <div class="search-bar" id="mainSearchBar">
+          <img id="searchIcon" src="./assets/search.svg" alt="" />
+          <input
+            type="text"
+            placeholder="Search: City, Place, Art, Architecture, Park, Collection..."
+          />
+          <button><img src="./assets/camera.svg" alt="Search Icon" /></button>
+        </div>
 
-      <!-- Mobile Search Icon -->
-      <img onclick="toggleSearch()" id="searchResponsive" src="./assets/search.svg" alt="Search Icon" />
+        <!-- Mobile Search Icon -->
+        <img
+          onclick="toggleSearch()"
+          id="searchResponsive"
+          src="./assets/search.svg"
+          alt="Search Icon"
+        />
 
-      <!-- Hamburger Menu -->
-      <span class="menu-toggle" onclick="toggleMenu()">
-        <img id="menu-icon" src="./assets/menu.svg" alt="Menu" />
-        <img id="close-icon" src="./assets/close.svg" alt="Close" style="display: none;" />
-      </span>
+        <!-- Hamburger Menu -->
+        <span class="menu-toggle" onclick="toggleMenu()">
+          <img id="menu-icon" src="./assets/menu.svg" alt="Menu" />
+          <img
+            id="close-icon"
+            src="./assets/close.svg"
+            alt="Close"
+            style="display: none"
+          />
+        </span>
 
-      <!-- Nav Links -->
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Explore</a></li>
-        <li>Welcome Kapil</li>
-      </ul>
-    </nav>
-  </div>
-
-  <!-- Mobile Responsive Search -->
-  <div class="responsive-search" id="responsiveSearch">
-    <div class="search-bar responsive">
-      <input type="text" placeholder="Search anything...">
-      <button><img src="./assets/camera.svg" alt="Search"></button>
-      <img src="./assets/close.svg" alt="Close" id="closeSearch" onclick="toggleSearch()">
+        <!-- Nav Links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Explore</a></li>
+          <li>Welcome Kapil</li>
+        </ul>
+      </nav>
     </div>
-  </div>
 
-  <!-- Status Bar -->
-  <div class="statusContainer">
-    <div class="status-bar">
-      <p>STATUS <span>: NOT LIVE</span></p>
-      <div class="status-bar-buttons">
-        <button>SUBMIT</button>
-        <button class="save"><img src="./assets/save.svg" alt="save"></button>
-        <button class="close"><img src="./assets/blackClose.svg" alt="close"></button>
-      </div>
-      <div class="status-bar-resolution">
-        <button><img src="./assets/laptop.svg" alt="icon"></button>
-        <button><img src="./assets/phone.svg" alt="icon"></button>
+    <!-- Mobile Responsive Search -->
+    <div class="responsive-search" id="responsiveSearch">
+      <div class="search-bar responsive">
+        <input type="text" placeholder="Search anything..." />
+        <button><img src="./assets/camera.svg" alt="Search" /></button>
+        <img
+          src="./assets/close.svg"
+          alt="Close"
+          id="closeSearch"
+          onclick="toggleSearch()"
+        />
       </div>
     </div>
-  </div>
+
+    <!-- Status Bar -->
+    <div class="statusContainer">
+      <div class="status-bar">
+        <p>STATUS <span>: NOT LIVE</span></p>
+        <div class="status-bar-buttons">
+          <button>SUBMIT</button>
+          <button class="save">
+            <img src="./assets/save.svg" alt="save" />
+          </button>
+          <button class="close">
+            <img src="./assets/blackClose.svg" alt="close" />
+          </button>
+        </div>
+        <div class="status-bar-resolution">
+          <button><img src="./assets/laptop.svg" alt="icon" /></button>
+          <button><img src="./assets/phone.svg" alt="icon" /></button>
+        </div>
+      </div>
+    </div>
 
     <div class="cover">
       <div class="image-upload"><p>+ Add a Headshot</p></div>
@@ -136,7 +158,10 @@
             <label>About *</label>
             <i class="fa-regular fa-circle-question"></i>
           </div>
-          <textarea rows="5" placeholder="Tell the world about the project The scale/size, materials. context, design concept, impact, etc"></textarea>
+          <textarea
+            rows="5"
+            placeholder="Tell the world about the project The scale/size, materials. context, design concept, impact, etc"
+          ></textarea>
         </div>
 
         <div
@@ -174,45 +199,63 @@
 
       <div class="right">
         <div class="divider" id="lal">
-          <div style="display: flex; align-items: center;">
+          <div style="display: flex; align-items: center">
             <p class="tag" id="photo">ADDITIONAL PHOTOGRAPHS</p>
-            <i style="padding-left: 0.5rem;" class="fa-regular fa-circle-question"></i>
+            <i
+              style="padding-left: 0.5rem"
+              class="fa-regular fa-circle-question"
+            ></i>
           </div>
-          <label style="padding-right: 1%;">0 Images, Show less <i style="padding-left: 0.3rem;" class="fa-solid fa-angle-up"></i></label>
+          <label style="padding-right: 1%"
+            >0 Images, Show less
+            <i style="padding-left: 0.3rem" class="fa-solid fa-angle-up"></i
+          ></label>
         </div>
         <div class="square">
           <div class="upload-placeholder" id="lal">
             <p class="plus">+</p>
-            <label style="margin-bottom: 1.8rem;">* Add an Image</label>
+            <label style="margin-bottom: 1.8rem">* Add an Image</label>
           </div>
           <p class="up">Image Date - Image Caption</p>
           <p class="down">Image Description</p>
         </div>
-         <div class="divider" id="lal">
-          <div style="display: flex; align-items: center;">
+        <div class="divider" id="lal">
+          <div style="display: flex; align-items: center">
             <p class="tag">DRAWINGS *</p>
-            <i style="padding-left: 0.5rem;" class="fa-regular fa-circle-question"></i>
+            <i
+              style="padding-left: 0.5rem"
+              class="fa-regular fa-circle-question"
+            ></i>
           </div>
-          <label style="padding-right: 1%;">0 Drawings, Show less <i style="padding-left: 0.3rem;" class="fa-solid fa-angle-up"></i></label>
+          <label style="padding-right: 1%"
+            >0 Drawings, Show less
+            <i style="padding-left: 0.3rem" class="fa-solid fa-angle-up"></i
+          ></label>
         </div>
-        <div class="square" >
+        <div class="square">
           <div class="upload-placeholder" id="lal">
             <p class="plus">+</p>
-            <label style="margin-bottom: 1.8rem;">* Add a Drawing</label>
+            <label style="margin-bottom: 1.8rem">* Add a Drawing</label>
           </div>
           <p class="up">Drawing Date - Drawing Caption</p>
           <p class="down">Drawing Description</p>
         </div>
 
-         <div class="divider">
-          <div style="display: flex; align-items: center;">
-            <p class="tag" style="color: #b01c1c;">NOTES</p>
-            <i style="padding-left: 0.5rem;" class="fa-regular fa-circle-question"></i>
+        <div class="divider">
+          <div style="display: flex; align-items: center">
+            <p class="tag" style="color: #b01c1c">NOTES</p>
+            <i
+              style="padding-left: 0.5rem"
+              class="fa-regular fa-circle-question"
+            ></i>
           </div>
         </div>
 
         <div class="notes">
-          <span>Questions OR Comments OR Additional Information about the Person</span>
+          <span
+            >Questions OR Comments OR Additional Information about the
+            Person</span
+          >
           <textarea name="" id=""></textarea>
         </div>
 

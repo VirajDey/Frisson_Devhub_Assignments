@@ -1,5 +1,7 @@
 document.getElementById("add-more-btn").addEventListener("click", function () {
-  const selectedAffiliation = document.querySelector('input[name="affiliation"]:checked');
+  const selectedAffiliation = document.querySelector(
+    'input[name="affiliation"]:checked'
+  );
   if (!selectedAffiliation) {
     alert("Please select an affiliation type first.");
     return;
@@ -27,7 +29,6 @@ document.getElementById("add-more-btn").addEventListener("click", function () {
   container.appendChild(section);
 });
 
-
 function toggleMenu() {
   const navLinks = document.querySelector(".nav-links");
   const menuIcon = document.getElementById("menu-icon");
@@ -40,8 +41,7 @@ function toggleMenu() {
   closeIcon.style.display = isOpen ? "block" : "none";
 }
 
-
 function toggleSearch() {
-const searchContainer = document.getElementById('responsiveSearch');
-searchContainer.classList.toggle('active');
+  const searchContainer = document.getElementById("responsiveSearch");
+  searchContainer.classList.toggle("active");
 }
