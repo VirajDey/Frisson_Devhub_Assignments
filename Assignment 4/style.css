@@ -218,7 +218,7 @@ body {
 
 .left {
   min-width: 300px;
-  width: 31%;
+  width: 28%;
 }
 
 .right {
@@ -248,7 +248,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 28%;
   background-color: white;
 }
 
@@ -314,7 +314,7 @@ select {
 
 .divider {
   background-color: #eee;
-  height: 2rem;
+  height: 2.4rem;
   margin-bottom: 2%;
   display: flex;
   align-items: center;
